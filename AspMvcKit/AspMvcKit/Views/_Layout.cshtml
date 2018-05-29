@@ -1,17 +1,115 @@
 ﻿
-@{
-    Layout = null;
-}
+<!DOCTYPE html >
 
-<!DOCTYPE html>
+<html lang="fr">
 
-<html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+
+    <meta name="viewport" content="width=device-width" charset="utf-8"/>
     <title>_Layout</title>
+    <link rel="stylesheet" href="~/Content/css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="~/Content/css/Site.css"/>
+    <script type="text/javascript" src="~/Content/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/holder.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery-3.3.1.min.js"></script>
+    <link href="~/Content/fonts/fontawesome-webfont.eot" />
+    <link href="~/Content/fonts/fontawesome-webfont.svg"/>
+    <link  href="~/Content/fonts/fontawesome-webfont.ttf"/>
+    <link href="~/Content/fonts/fontawesome-webfont.woff"/>
+    <link href="~/Content/fonts/fontawesome-webfont.woff2" />
+    <link href="~/Content/fonts/FontAwesome.otf"/>
+    
 </head>
+
 <body>
-    <div> 
+
+    <header>
+
+        <nav>
+
+        </nav>
+
+    </header>
+
+    <hr />
+
+    <div id="my_body">
+
+        @RenderBody()
+
     </div>
+
+    <hr />
+
+    <footer>
+
+        <table class="mon_tableau">
+
+            <tr><!-- nouvelle ligne -->
+                <td colspan="2"><!-- nouvel colonne-->
+                    Links
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Link #1
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Link #2
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Link #3
+                </td>
+            </tr>
+        </table>
+
+        <table class="mon_tableau">
+            <tr>
+                <td>
+                    Sitemap
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Link #1
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Link #2
+                </td>
+            </tr>
+              
+            <tr>
+                <td>
+                    Link #3
+                </td>
+            </tr>
+            
+        </table>
+
+        <table class="mon_tableau">
+            <tr>
+                <td>
+                    c Copyright 2018
+                </td>
+            </tr>
+        </table>
+    </footer>
+
 </body>
+
 </html>

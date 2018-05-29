@@ -1,8 +1,31 @@
 ﻿
-body 
+.my_body
+{
+
+    border: 1px solid black ;
+
+
+}
+
+nav
 {
 
 
+
+}
+
+footer
+{
+
+
+    border: 1px solid black;
+
+}
+
+.mon_tableau
+{
+
+    display:inline;
 
 
 }
