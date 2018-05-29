@@ -27,87 +27,108 @@
 
     <header>
 
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+
+            <a class="navbar-brand " href="#">Brand</a>
+            <a class="nav-link dropdown-toggle" href="#">Menu #1</a>
+            <a class="nav-link" href="#">Menu #2</a>
+            <a class="nav-link" href="#">Menu #3</a>
+            <a class="nav-link" href="#">Menu #4</a>
 
         </nav>
+        
+        <div class="container" id="bordure_entete">
+
+            <div class="row">
+           
+                    <div class="col-sm">
+                        <img src="~/Content/logo.jpg" />
+                    </div>
+                    <div class="col-sm" id="mes_titres">
+                        <h1>Application Title</h1>
+                        <h2>Application SubTitle</h2>
+                    </div>
+                </div>
+            </div>
+ 
 
     </header>
 
-    <hr />
+    <div class="container">
+        <div class="row">
+        <div id="element_dynamique">
 
-    <div id="my_body">
+            @RenderBody()
 
-        @RenderBody()
+        </div>
 
+        <div id="element_aside"></div>
+        <aside>
+
+            <h1>
+                Aside
+            </h1>
+
+        </aside>
+        </div>
     </div>
-
-    <hr />
-
     <footer>
 
-        <table class="mon_tableau">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
 
-            <tr><!-- nouvelle ligne -->
-                <td colspan="2"><!-- nouvel colonne-->
-                    Links
-                </td>
-            </tr>
+                    <ol>
+                        Links
+                    </ol>
 
-            <tr>
-                <td>
-                    Link #1
-                </td>
+                    <ul>
 
-            </tr>
+                        <li>
+                            Links
+                        </li>
+                        <li>
+                            <a href="#">Link #1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link #2</a>
+                        </li>
+                        <li>
+                            <a href="#">Link #3</a>
+                        </li>
+                    </ul>
 
-            <tr>
-                <td>
-                    Link #2
-                </td>
-            </tr>
+                </div>
 
-            <tr>
-                <td>
-                    Link #3
-                </td>
-            </tr>
-        </table>
+                <div class="col-sm">
+                    <ol>
+                        Sitemap
+                    </ol>
 
-        <table class="mon_tableau">
-            <tr>
-                <td>
-                    Sitemap
-                </td>
-            </tr>
+                    <ul>
+                        <li>
+                            <a href="#">Link #1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link #2</a>
+                        </li>
+                        <li>
+                            <a href="#">Link #3</a>
+                        </li>
+                    </ul>
 
-            <tr>
-                <td>
-                    Link #1
-                </td>
+                </div>
 
-            </tr>
 
-            <tr>
-                <td>
-                    Link #2
-                </td>
-            </tr>
-              
-            <tr>
-                <td>
-                    Link #3
-                </td>
-            </tr>
-            
-        </table>
-
-        <table class="mon_tableau">
-            <tr>
-                <td>
-                    c Copyright 2018
-                </td>
-            </tr>
-        </table>
+                <div class="col-sm">
+                    <ul>
+                        <ol>
+                            Copyright 2018
+                        </ol>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

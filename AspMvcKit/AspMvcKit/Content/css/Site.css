@@ -1,31 +1,86 @@
-﻿
-.my_body
+﻿body
 {
 
-    border: 1px solid black ;
-
+    border:1px solid black;
 
 }
 
 nav
 {
 
-
+    margin-bottom:5px;
+    margin-top:5px;
+    color:white;
 
 }
 
 footer
 {
 
-
     border: 1px solid black;
 
 }
 
-.mon_tableau
+.mon_footer
 {
 
-    display:inline;
+    border:1px solid black;
+    display:inline-block;
+    padding:5px;
+    width:auto;
 
+}
+
+aside, footer, #element_entete, #element_dynamique, #bordure_entete 
+{
+
+    border-top-right-radius: 10% 5%;
+    border-top-left-radius: 10% 5%;
+    margin-top: 10px;
+    border: 1px solid black;
+    margin-left:15px;
+
+}
+
+#element_dynamique,#element_aside
+{
+
+    padding-left: 10px;
+    border-collapse:collapse;
+    display:inline-block;
+    
+
+}
+
+
+#logo
+{
+
+    height:200px;
+    width:300px;
+    padding-left:2px;
+
+}
+
+#bordure_entete 
+{
+
+    
+    margin: 15px;
+    border: 1px solid black;
+
+}
+
+#mes_titres
+{
+
+    padding-left: 0px;
+
+}
+
+aside
+{
+
+    margin-right: 15px;
 
 }

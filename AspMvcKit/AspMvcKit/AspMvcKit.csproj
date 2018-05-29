@@ -110,6 +110,7 @@
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\holder.js" />
     <Content Include="Content\js\jquery-3.3.1.min.js" />
+    <Content Include="Content\logo.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
