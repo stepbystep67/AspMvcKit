@@ -5,22 +5,16 @@
 
 <head>
 
-    <meta name="viewport" content="width=device-width" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
     <title>_Layout</title>
-    <link rel="stylesheet" href="~/Content/css/bootstrap-reboot.min.css"/>
-    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="~/Content/css/Site.css"/>
     <script type="text/javascript" src="~/Content/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="~/Content/js/holder.js"></script>
     <script type="text/javascript" src="~/Content/js/jquery-3.3.1.min.js"></script>
-    <link href="~/Content/fonts/fontawesome-webfont.eot" />
-    <link href="~/Content/fonts/fontawesome-webfont.svg"/>
-    <link  href="~/Content/fonts/fontawesome-webfont.ttf"/>
-    <link href="~/Content/fonts/fontawesome-webfont.woff"/>
-    <link href="~/Content/fonts/fontawesome-webfont.woff2" />
-    <link href="~/Content/fonts/FontAwesome.otf"/>
-    
+    <link rel="stylesheet" href="~/Content/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/css/Site.css" />
+
 </head>
 
 <body>
@@ -36,47 +30,49 @@
             <a class="nav-link" href="#">Menu #4</a>
 
         </nav>
-        
-        <div class="container" id="bordure_entete">
-
-            <div class="row">
-           
-                    <div class="col-sm">
-                        <img src="~/Content/logo.jpg" />
-                    </div>
-                    <div class="col-sm" id="mes_titres">
-                        <h1>Application Title</h1>
-                        <h2>Application SubTitle</h2>
-                    </div>
-                </div>
-            </div>
- 
 
     </header>
 
-    <div class="container">
+    <div class="container border border-dark" id="element_entete">
+
         <div class="row">
-        <div id="element_dynamique">
 
-            @RenderBody()
-
-        </div>
-
-        <div id="element_aside"></div>
-        <aside>
-
-            <h1>
-                Aside
-            </h1>
-
-        </aside>
+            <div class="col col-sm-3">
+                <img src="~/Content/logo.jpg" class="img-fluid" />
+            </div>
+            <div class="col col-sm-9" id="mes_titres">
+                <h1>Application Title</h1>
+                <h2>Application SubTitle</h2>
+            </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <article class="border border-dark col col-sm-10">
+
+                @RenderBody()
+
+            </article>
+
+            <aside class="col col-sm-2 border border-dark ">
+
+                <h1>
+                    Aside
+                </h1>
+
+            </aside>
+
+        </div>
+    </div>
+
     <footer>
 
         <div class="container">
+
             <div class="row">
-                <div class="col-sm">
+
+                <div class="col-sm-5 border border-dark">
 
                     <ol>
                         Links
@@ -100,7 +96,7 @@
 
                 </div>
 
-                <div class="col-sm">
+                <div class="col-sm-5 border border-dark">
                     <ol>
                         Sitemap
                     </ol>
@@ -120,15 +116,20 @@
                 </div>
 
 
-                <div class="col-sm">
+                <div class="col-sm-2 border border-dark">
+
                     <ul>
-                        <ol>
-                            Copyright 2018
-                        </ol>
+
+                        Copyright 2018
+
                     </ul>
+
                 </div>
+
             </div>
+
         </div>
+
     </footer>
 
 </body>
