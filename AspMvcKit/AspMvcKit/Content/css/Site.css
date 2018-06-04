@@ -1,7 +1,58 @@
-﻿header,article,aside,footer,#element_entete
+﻿header, article, aside, footer, #element_entete 
 {
 
-    margin-top:5px;
+  
+    margin-top: 5px;
 
+}
+
+#border
+{
+
+    border-left:none !important;
+    border-right:none !important;
+
+}
+
+#border_aside
+{
+
+    border-left:none !important;
+
+}
+
+#logo
+{
+
+   padding:0;
+    
+}
+
+#siteLogo
+{
+
+    padding: 5px;
+
+}
+
+#bordure_gauche,#site,article
+{
+
+ border-top-left-radius:5px;
+
+}
+
+aside ,#copyright
+{
+
+    border-top-right-radius: 5px;
+
+}
+
+#siteLogo,#element_entete
+{
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 
 }

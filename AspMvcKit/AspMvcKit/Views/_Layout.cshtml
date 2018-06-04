@@ -37,8 +37,8 @@
 
         <div class="row">
 
-            <div class="col col-sm-3">
-                <img src="~/Content/logo.jpg" class="img-fluid" />
+            <div class="col col-sm-3" id="siteLogo">
+                <img src="~/Content/logo.jpg" class="img-fluid rounded" id="logo"/>
             </div>
             <div class="col col-sm-9" id="mes_titres">
                 <h1>Application Title</h1>
@@ -47,7 +47,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="site">
         <div class="row">
             <article class="border border-dark col col-sm-10">
 
@@ -55,9 +55,9 @@
 
             </article>
 
-            <aside class="col col-sm-2 border border-dark ">
+            <aside class="col col-sm-2 border border-dark float-left" id="border_aside">
 
-                <h1>
+                <h1 class="float-left">
                     Aside
                 </h1>
 
@@ -72,13 +72,13 @@
 
             <div class="row">
 
-                <div class="col-sm-5 border border-dark">
+                <div class="col-sm-5 border border-dark" id="bordure_gauche">
 
-                    <ol>
+                    <h5>
                         Links
-                    </ol>
+                    </h5>
 
-                    <ul>
+                    <ul class="float-left">
 
                         <li>
                             Links
@@ -96,12 +96,12 @@
 
                 </div>
 
-                <div class="col-sm-5 border border-dark">
-                    <ol>
+                <div class="col-sm-5 border border-dark " id="border" >
+                    <h5>
                         Sitemap
-                    </ol>
+                    </h5>
 
-                    <ul>
+                    <ul class="float-left">
                         <li>
                             <a href="#">Link #1</a>
                         </li>
@@ -116,13 +116,13 @@
                 </div>
 
 
-                <div class="col-sm-2 border border-dark">
+                <div class="col-sm-2 border border-dark" id="copyright">
 
-                    <ul>
-
-                        Copyright 2018
-
-                    </ul>
+                 
+                       
+                            © Copyright 2018
+                       
+                   
 
                 </div>
 
